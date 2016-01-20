@@ -112,7 +112,7 @@ public class Subgrupo implements Serializable {
 
     @Override
     public String toString() {
-        return "Modelo.Subgrupo[ idsubgrupo=" + idsubgrupo + " ]";
+        return subgrupo;
     }
     
 }

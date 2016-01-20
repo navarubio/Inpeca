@@ -85,7 +85,7 @@ public class Tipopago implements Serializable {
 
     @Override
     public String toString() {
-        return "Modelo.Tipopago[ idtipopago=" + idtipopago + " ]";
+        return tipopago;
     }
     
 }

@@ -99,7 +99,7 @@ public class Contribuyente implements Serializable {
 
     @Override
     public String toString() {
-        return "Modelo.Contribuyente[ idcontribuyente=" + idcontribuyente + " ]";
+        return contribuyente;
     }
     
 }

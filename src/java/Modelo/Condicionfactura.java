@@ -85,7 +85,7 @@ public class Condicionfactura implements Serializable {
 
     @Override
     public String toString() {
-        return "Modelo.Condicionfactura[ idcondicionfactura=" + idcondicionfactura + " ]";
+        return condicionfactura;
     }
     
 }

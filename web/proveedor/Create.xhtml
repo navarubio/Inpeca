@@ -7,7 +7,6 @@
       xmlns:p="http://primefaces.org/ui">
 
     <ui:composition>
-
         <p:dialog id="ProveedorCreateDlg" widgetVar="ProveedorCreateDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.CreateProveedorTitle}">
             <h:form id="ProveedorCreateForm">
                 <h:panelGroup id="display">
@@ -33,12 +32,6 @@
                             <f:selectItems value="#{tipoproveedorController.itemsAvailableSelectOne}"
                                            var="idtipoproveedorItem"
                                            itemValue="#{idtipoproveedorItem}"/>
-                        </p:selectOneMenu>
-                        <p:outputLabel value="#{bundle.CreateProveedorLabel_idusuario}" for="idusuario" />
-                        <p:selectOneMenu id="idusuario" value="#{proveedorController.selected.idusuario}" >
-                            <f:selectItems value="#{usuarioController.itemsAvailableSelectOne}"
-                                           var="idusuarioItem"
-                                           itemValue="#{idusuarioItem}"/>
                         </p:selectOneMenu>
                         <p:outputLabel value="#{bundle.CreateProveedorLabel_idpersonalidad}" for="idpersonalidad" />
                         <p:selectOneMenu id="idpersonalidad" value="#{proveedorController.selected.idpersonalidad}" >

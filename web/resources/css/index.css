@@ -8,3 +8,17 @@
     width: 40%;
     text-align: center;
 }
+
+#imag {
+    position: absolute;
+    top:  50px; 
+    left: 250px;
+
+}
+
+#imag1 {
+    position: absolute; 
+    top: 20px; 
+    left: 950px; 
+}
+

@@ -99,7 +99,7 @@ public class Medida implements Serializable {
 
     @Override
     public String toString() {
-        return "Modelo.Medida[ idmedida=" + idmedida + " ]";
+        return medida;
     }
     
 }

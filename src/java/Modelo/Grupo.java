@@ -110,7 +110,7 @@ public class Grupo implements Serializable {
 
     @Override
     public String toString() {
-        return "Modelo.Grupo[ idgrupo=" + idgrupo + " ]";
+        return grupo;
     }
     
 }

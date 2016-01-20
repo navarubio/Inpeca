@@ -111,7 +111,7 @@ public class Gravamen implements Serializable {
 
     @Override
     public String toString() {
-        return "Modelo.Gravamen[ idgravamen=" + idgravamen + " ]";
+        return categoria;
     }
     
 }

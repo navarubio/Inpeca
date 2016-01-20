@@ -85,7 +85,7 @@ public class Deposito implements Serializable {
 
     @Override
     public String toString() {
-        return "Modelo.Deposito[ iddeposito=" + iddeposito + " ]";
+        return nombredeposito;
     }
     
 }

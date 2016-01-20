@@ -110,7 +110,7 @@ public class Personalidadjuridica implements Serializable {
 
     @Override
     public String toString() {
-        return "Modelo.Personalidadjuridica[ idpersonalidad=" + idpersonalidad + " ]";
+        return personalidad;
     }
     
 }
