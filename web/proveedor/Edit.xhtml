@@ -15,9 +15,9 @@
                         <p:outputLabel value="#{bundle.EditProveedorLabel_rifproveedor}" for="rifproveedor" />
                         <p:inputText id="rifproveedor" value="#{proveedorController.selected.rifproveedor}" title="#{bundle.EditProveedorTitle_rifproveedor}" required="true" requiredMessage="#{bundle.EditProveedorRequiredMessage_rifproveedor}"/>
                         <p:outputLabel value="#{bundle.EditProveedorLabel_razonsocial}" for="razonsocial" />
-                        <p:inputText id="razonsocial" value="#{proveedorController.selected.razonsocial}" title="#{bundle.EditProveedorTitle_razonsocial}" />
+                        <p:inputText id="razonsocial" size="60" value="#{proveedorController.selected.razonsocial}" title="#{bundle.EditProveedorTitle_razonsocial}" />
                         <p:outputLabel value="#{bundle.EditProveedorLabel_direccionfiscal}" for="direccionfiscal" />
-                        <p:inputText id="direccionfiscal" value="#{proveedorController.selected.direccionfiscal}" title="#{bundle.EditProveedorTitle_direccionfiscal}" />
+                        <p:inputText id="direccionfiscal" size="60" value="#{proveedorController.selected.direccionfiscal}" title="#{bundle.EditProveedorTitle_direccionfiscal}" />
                         <p:outputLabel value="#{bundle.EditProveedorLabel_telefonos}" for="telefonos" />
                         <p:inputText id="telefonos" value="#{proveedorController.selected.telefonos}" title="#{bundle.EditProveedorTitle_telefonos}" />
                         <p:outputLabel value="#{bundle.EditProveedorLabel_correo}" for="correo" />
@@ -25,7 +25,7 @@
                         <p:outputLabel value="#{bundle.EditProveedorLabel_fechainscripcion}" for="fechainscripcion" />
                         <p:calendar id="fechainscripcion" pattern="MM/dd/yyyy" value="#{proveedorController.selected.fechainscripcion}" title="#{bundle.EditProveedorTitle_fechainscripcion}"  showOn="button"/>
                         <p:outputLabel value="#{bundle.EditProveedorLabel_personacontacto}" for="personacontacto" />
-                        <p:inputText id="personacontacto" value="#{proveedorController.selected.personacontacto}" title="#{bundle.EditProveedorTitle_personacontacto}" />
+                        <p:inputText id="personacontacto" size="60" value="#{proveedorController.selected.personacontacto}" title="#{bundle.EditProveedorTitle_personacontacto}" />
                         <p:outputLabel value="#{bundle.EditProveedorLabel_telefonocontacto}" for="telefonocontacto" />
                         <p:inputText id="telefonocontacto" value="#{proveedorController.selected.telefonocontacto}" title="#{bundle.EditProveedorTitle_telefonocontacto}" />
                         <p:outputLabel value="#{bundle.EditProveedorLabel_idtipoproveedor}" for="idtipoproveedor" />
@@ -34,13 +34,6 @@
                             <f:selectItems value="#{tipoproveedorController.itemsAvailableSelectOne}"
                                            var="idtipoproveedorItem"
                                            itemValue="#{idtipoproveedorItem}"/>
-                        </p:selectOneMenu>
-                        <p:outputLabel value="#{bundle.EditProveedorLabel_idusuario}" for="idusuario" />
-                        <p:selectOneMenu id="idusuario" value="#{proveedorController.selected.idusuario}" >
-                            <f:selectItem itemLabel="#{bundle.SelectOneMessage}"/>
-                            <f:selectItems value="#{usuarioController.itemsAvailableSelectOne}"
-                                           var="idusuarioItem"
-                                           itemValue="#{idusuarioItem}"/>
                         </p:selectOneMenu>
                         <p:outputLabel value="#{bundle.EditProveedorLabel_idpersonalidad}" for="idpersonalidad" />
                         <p:selectOneMenu id="idpersonalidad" value="#{proveedorController.selected.idpersonalidad}" >

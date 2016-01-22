@@ -31,11 +31,11 @@
                         <h:outputText value="#{bundle.ViewClienteLabel_telefonocontacto}"/>
                         <h:outputText value="#{clienteController.selected.telefonocontacto}" title="#{bundle.ViewClienteTitle_telefonocontacto}"/>
                         <h:outputText value="#{bundle.ViewClienteLabel_idcontribuyente}"/>
-                        <h:outputText value="#{clienteController.selected.idcontribuyente}" title="#{bundle.ViewClienteTitle_idcontribuyente}"/>
+                        <h:outputText value="#{clienteController.selected.idcontribuyente.contribuyente}" title="#{bundle.ViewClienteTitle_idcontribuyente}"/>
                         <h:outputText value="#{bundle.ViewClienteLabel_idusuario}"/>
                         <h:outputText value="#{clienteController.selected.idusuario}" title="#{bundle.ViewClienteTitle_idusuario}"/>
                         <h:outputText value="#{bundle.ViewClienteLabel_idpersonalidad}"/>
-                        <h:outputText value="#{clienteController.selected.idpersonalidad}" title="#{bundle.ViewClienteTitle_idpersonalidad}"/>
+                        <h:outputText value="#{clienteController.selected.idpersonalidad.personalidad}" title="#{bundle.ViewClienteTitle_idpersonalidad}"/>
                     </p:panelGrid>
                     <p:commandButton value="#{bundle.Close}" onclick="ClienteViewDialog.hide()"/>
                 </h:panelGroup>

@@ -8,16 +8,16 @@
 
     <ui:composition template="/template.xhtml">
 
-
         <ui:define name="title">
-            <h:outputText value="#{bundle.ListProveedorTitle}"></h:outputText>
+            <title><h:outputText value="#{bundle.ListProveedorTitle}"></h:outputText></title>
         </ui:define>
 
         <ui:define name="body">
             <h:form id="ProveedorListForm">
                 <div id="imag">
                     <img src="../resources/images/LogoInpeca.jpg" width="155" height="78" alt="Logo Inpeca"/>
-                </div>                       
+                </div>      
+                <img src="../resources/images/kdmconfig.png" width="70" height="70" alt="Clientes" align="right" />
                 <p:panel header="#{bundle.ListProveedorTitle}">
                     <p:dataTable id="datalist" value="#{proveedorController.items}" var="item"
                                  selectionMode="single" selection="#{proveedorController.selected}"
@@ -36,7 +36,7 @@
                             </f:facet>
                             <h:outputText value="#{item.rifproveedor}"/>
                         </p:column>
-                        <p:column>
+                        <p:column width="300" >
                             <f:facet name="header">
                                 <h:outputText value="#{bundle.ListProveedorTitle_razonsocial}"/>
                             </f:facet>
@@ -84,19 +84,13 @@
                             <f:facet name="header">
                                 <h:outputText value="#{bundle.ListProveedorTitle_idtipoproveedor}"/>
                             </f:facet>
-                            <h:outputText value="#{item.idtipoproveedor}"/>
-                        </p:column>
-                        <p:column>
-                            <f:facet name="header">
-                                <h:outputText value="#{bundle.ListProveedorTitle_idusuario}"/>
-                            </f:facet>
-                            <h:outputText value="#{item.idusuario}"/>
+                            <h:outputText value="#{item.idtipoproveedor.tipoproveedor}"/>
                         </p:column>
                         <p:column>
                             <f:facet name="header">
                                 <h:outputText value="#{bundle.ListProveedorTitle_idpersonalidad}"/>
                             </f:facet>
-                            <h:outputText value="#{item.idpersonalidad}"/>
+                            <h:outputText value="#{item.idpersonalidad.personalidad}"/>
                         </p:column>
                         <f:facet name="footer">
                             <p:commandButton id="createButton" icon="ui-icon-plus"   value="#{bundle.Create}" actionListener="#{proveedorController.prepareCreate}" update=":ProveedorCreateForm" oncomplete="PF('ProveedorCreateDialog').show()"/>
@@ -112,8 +106,9 @@
             <ui:include src="Edit.xhtml"/>
             <ui:include src="View.xhtml"/>
         </ui:define>
-        
-        
+        <p:layoutUnit id="" position="center">
+            CONTENT 
+        </p:layoutUnit>        
     </ui:composition>
 
 </html>

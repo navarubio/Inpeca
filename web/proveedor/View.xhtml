@@ -31,11 +31,11 @@
                         <h:outputText value="#{bundle.ViewProveedorLabel_telefonocontacto}"/>
                         <h:outputText value="#{proveedorController.selected.telefonocontacto}" title="#{bundle.ViewProveedorTitle_telefonocontacto}"/>
                         <h:outputText value="#{bundle.ViewProveedorLabel_idtipoproveedor}"/>
-                        <h:outputText value="#{proveedorController.selected.idtipoproveedor}" title="#{bundle.ViewProveedorTitle_idtipoproveedor}"/>
+                        <h:outputText value="#{proveedorController.selected.idtipoproveedor.tipoproveedor}" title="#{bundle.ViewProveedorTitle_idtipoproveedor}"/>
                         <h:outputText value="#{bundle.ViewProveedorLabel_idusuario}"/>
-                        <h:outputText value="#{proveedorController.selected.idusuario}" title="#{bundle.ViewProveedorTitle_idusuario}"/>
+                        <h:outputText value="#{proveedorController.selected.idusuario.nombre}" title="#{bundle.ViewProveedorTitle_idusuario}"/>
                         <h:outputText value="#{bundle.ViewProveedorLabel_idpersonalidad}"/>
-                        <h:outputText value="#{proveedorController.selected.idpersonalidad}" title="#{bundle.ViewProveedorTitle_idpersonalidad}"/>
+                        <h:outputText value="#{proveedorController.selected.idpersonalidad.personalidad}" title="#{bundle.ViewProveedorTitle_idpersonalidad}"/>
                     </p:panelGrid>
                     <p:commandButton value="#{bundle.Close}" onclick="ProveedorViewDialog.hide()"/>
                 </h:panelGroup>
